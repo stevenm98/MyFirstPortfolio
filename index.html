@@ -1,6 +1,4 @@
-<?php
-    include("controller.php");
-?>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -205,15 +203,15 @@
             <i class="material-icons prefix">email</i>
             <input type="email" id="email" class="validate" required="required" name="email" value="<?=htmlspecialchars($email); ?>">
             <label for="email">Your email</label>   
-            <div class="red-text"><?php echo $errors["email"]; ?></div>
+            <div class="red-text"></div>
             <span class="helper-text" data-error="Invalid email!" data-success="Valid email"></span>             
           </div>
           <div class="input-field">
             <i class="material-icons prefix">message</i>
             <textarea name="message" id="message" class="materialize-textarea validate" required="required"
-             minlength="2" ><?=htmlspecialchars($message); ?></textarea>
+             minlength="2" ></textarea>
             <label for="message" >Your message or feedback</label>
-            <div class="red-text"><?php echo $errors["message"]; ?></div>
+            <div class="red-text"></div>
             <span class="helper-text" data-error="Minimum 2 characters" data-success="Good!"></span>
           </div>
           <div class="input-field">
@@ -235,9 +233,9 @@
                   <span>Back-end Development</span>
                </label>
             </p>
-            <div class="red-text"><?php echo $errors["dev"]; ?></div>
+            <div class="red-text"></div>
           </div>
-          <div class="green-text text-darken-1 center"><h5><?=$msg;?></h5></div>
+          <div class="green-text text-darken-1 center"></h5></div>
           <div class="input-field center">
             <button class="btn" name="btnSubmit" formaction="#contact" data-target="msg">Submit</button>
           </div>
