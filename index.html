@@ -198,7 +198,7 @@
         it will be helpful for me to improve my skills.</p>
       </div>
       <div class="col s12 l6 push-l1">
-         <form action="myWebsite.php" method="POST">
+         <form method="POST" data-netlify="true">
           <div class="input-field">
             <i class="material-icons prefix">email</i>
             <input type="email" id="email" class="validate" required="required" name="email">
@@ -235,9 +235,12 @@
             </p>
             <div class="red-text"></div>
           </div>
+          <div class="field">
+            <div data-netlify-recaptcha="true"></div>
+          </div>
           <div class="green-text text-darken-1 center"></h5></div>
           <div class="input-field center">
-            <button class="btn" name="btnSubmit" formaction="#contact" data-target="msg">Submit</button>
+            <button class="btn" name="btnSubmit" formaction="#contact">Submit</button>
           </div>
           
         </form>
