@@ -1,0 +1,299 @@
+<?php
+    include("controller.php");
+?>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel='icon' href='Images/newlogo1.png'/>
+  <title>Steve's Website</title>
+  <style>
+    header{
+        background: url(Images/program4.jpg);
+        background-size: cover;
+        background-position: right;
+        min-height: 950px;
+    }
+    .section{
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+    }
+    .tabs .indicator{
+      background-color: #1a237e;
+    }
+    .tabs .tab a:focus, .tabs .tab a:focus.active{
+      background: transparent;
+    }
+    @media screen and (max-width: 670px){
+        header{ 
+            min-height: 500px;
+        }
+
+    }
+    @media (max-width: 670px){
+        code1.jpg{
+            background-attachment: parallax ;
+        }
+        code2.jpg{
+            background-attachment: parallax ;
+        }
+    }
+  </style>
+</head>
+<body>
+  <!-- navbar -->
+  <header>
+     <nav class="nav-wrapper transparent">
+        <div class="container">
+           <a href="" class="brand-logo"><img src="Images/newlogo1.png" 
+           class="responsive-img" style="height:60px;"></a>
+           <a href="" class="sidenav-trigger" data-target="mobile-menu">
+              <i class="material-icons">menu</i>
+           </a>   
+           <ul class="right hide-on-med-and-down">
+              <li><a href="#photos" class="indigo-text text-lighten-3">Photos</a></li>
+              <li><a href="#about" class="indigo-text text-lighten-3">About me</a></li>
+              <li><a href="#contact" class="indigo-text text-lighten-3">Contact</a></li> 
+              <li><a href="https://www.facebook.com/steven7200" target="_blank" 
+                     class="tooltipped btn-floating btn-small indigo darken-3" data-tooltip="Facebook">
+                     <i class="fab fa-facebook"></i>
+                  </a></li>
+              <li><a href="https://www.instagram.com/estayvain" target="_blank" 
+                 class="tooltipped btn-floating btn-small indigo darken-2" data-tooltip="Instagram">
+                 <i class="fab fa-instagram"></i>
+              </a></li> 
+              <li><a href="https://github.com/stevenm98" target="_blank"
+                 class="tooltipped btn-floating btn-small indigo darken-2" data-tooltip="GitHub">
+                 <i class="fab fa-github"></i>
+               </a></li>      
+           </ul>
+           <ul class="sidenav grey lighten-2" id="mobile-menu">
+              <li><a href="#photos">Photos</a></li>
+              <li><a href="#about">About me</a></li>
+              <li><a href="#contact">Contact</a></li>
+           </ul>
+        </div>
+     </nav>
+  </header>
+  <!-- services / tabs -->
+  <section class="container section scrollspy" id="about">
+     <div class="row">
+       <div class="col s12 l3 pull-l1">
+         <img src="Images/profile.png" data-caption="Sorry blurry" class="responsive-img materialboxed circle">  
+       </div>
+       <div class="col s12 l4 pull-l1">
+          <h4 class="indigo-text text-darken-4">About Me</h4>
+          <p>Hello! I'm Steven Merin. I'm currently studying Bachelor of 
+          Science in Infomation Technology at University of Cebu.
+          </p>
+          <p>I'm passionate about programming and web development. 
+          I keep coding and learning everyday to enchance my skills and knowledge.</p>
+       </div>
+       <div class="col s12 l5">
+          <h6 class="indigo-text text-darken-3">My knowledge in Web Development</h6>
+          <ul class="tabs">
+            <li class="tab col s6">
+              <a href="#front" class="indigo-text text-darken4">Front-end</a>
+            </li>
+            <li class="tab col s6">
+              <a href="#back" class="indigo-text text-darken4">Back-end</a>
+            </li>
+          </ul>
+          <div class="col s12" id="front">
+              <p class="">My current experience & knowledge in front-end development:</p>
+              <div class="row">
+                <div class="col s12 l5">
+                  <i class="material-icons circle indigo-text" style="vertical-align:-6px;">chevron_right</i>HTML & CSS
+                </div>
+                <div class="col s12 l5 offset-l1">
+                  <i class="material-icons circle indigo-text" style="vertical-align:-6px;">chevron_right</i>JavaScript
+                </div>   
+            </div>
+            <div class="row">
+                <div class="col s12 l5">
+                  <i class="material-icons circle indigo-text" style="vertical-align:-6px;">chevron_right</i>Materialize CSS
+                </div>
+                <div class="col s12 l5 offset-l1">
+                  <i class="material-icons circle indigo-text" style="vertical-align:-6px;">chevron_right</i>Bootstrap 3
+                </div> 
+            </div>
+            
+          </div>
+          <div class="col s12" id="back">
+             <p class="">My current experience & knowledge in back-end development:</p>
+             <div class="row">
+                <div class="col s12 l5">
+                  <i class="material-icons circle indigo-text" style="vertical-align:-6px;">chevron_right</i>PHP
+                </div>
+                <div class="col s12 l5 offset-l1">
+                  <i class="material-icons circle indigo-text" style="vertical-align:-6px;">chevron_right</i>MySQL
+                </div>   
+            </div>
+          </div>
+       </div>     
+     </div>
+  </section>
+  <!-- parallax -->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="Images/code2.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
+  <!-- photo / grid --> 
+  <section class="container section scrollspy" id="photos">
+    <div class="row">
+      <h3 class="indigo-text text-darken-4 center">Certificates & Projects</h3>
+    </div>
+    <div class="row" style="">
+       <div class="col s12 l4">
+          <img src="Images/TrendMicro.jpg"  data-caption="This event tackles about cyber-crime and cybers-security." 
+          class="responsive-img materialboxed">
+       </div>
+       <div class="col s12 l4">
+          <img src="Images/Beehive.jpg" data-caption="The importance of Entrepreneurship and how it affects our lives. " 
+          class="responsive-img materialboxed">
+       </div>
+       <div class="col s12 l4">
+          <img src="Images/DataComm.jpg"  data-caption="I experienced how to connect networks between computer devices." 
+          class="responsive-img materialboxed">
+       </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l4">
+          <img src="Images/program.jpg"  data-caption="A picture of a way with a group of trees in a park" 
+          class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l4">
+          <img src="Images/program2.jpg"  data-caption="A picture of a way with a group of trees in a park" 
+          class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l4">
+          <img src="Images/program3.jpg"  data-caption="A picture of a way with a group of trees in a park" 
+          class="responsive-img materialboxed">
+      </div>
+    </div>
+  </section>
+  
+  <!-- parallax -->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="Images/code1.jpg" alt="" class="responsive-img">
+    </div>
+  </div>  
+  <!-- contact form -->
+  <section class="section container scrollspy" id="contact">
+    <div class="row">
+      <div class="col s12 l6 pull-l1">
+        <h4 class="indigo-text text-darken-4">Contact me & Feedbacks</h4>
+        <p>If you're interested in my experiences in my projects please do leave a message. You can also contact me through
+        my gmail: <b>merin.steven@gmail.com.</b>
+        </p>
+        <p>Please leave a message or any feedbacks on your experience of the website, 
+        it will be helpful for me to improve my skills.</p>
+      </div>
+      <div class="col s12 l6 push-l1">
+         <form action="myWebsite.php" method="POST">
+          <div class="input-field">
+            <i class="material-icons prefix">email</i>
+            <input type="email" id="email" class="validate" required="required" name="email" value="<?=htmlspecialchars($email); ?>">
+            <label for="email">Your email</label>   
+            <div class="red-text"><?php echo $errors["email"]; ?></div>
+            <span class="helper-text" data-error="Invalid email!" data-success="Valid email"></span>             
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">message</i>
+            <textarea name="message" id="message" class="materialize-textarea validate" required="required"
+             minlength="2" ><?=htmlspecialchars($message); ?></textarea>
+            <label for="message" >Your message or feedback</label>
+            <div class="red-text"><?php echo $errors["message"]; ?></div>
+            <span class="helper-text" data-error="Minimum 2 characters" data-success="Good!"></span>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">date_range</i>
+            <input type="text" id="date" class="datepicker" name="service_date">
+            <label for="date">Choose a date if you need me for...</label>
+          </div>
+          <div class="input-field">
+            <p>Choose a service that you need</p>
+            <p>
+               <label>
+                  <input type="checkbox" value="front-end" name="dev[]" >
+                  <span>Front-end Development</span>
+               </label>
+            </p>
+            <p>
+               <label>
+                  <input type="checkbox" value="back-end" name="dev[]">
+                  <span>Back-end Development</span>
+               </label>
+            </p>
+            <div class="red-text"><?php echo $errors["dev"]; ?></div>
+          </div>
+          <div class="green-text text-darken-1 center"><h5><?=$msg;?></h5></div>
+          <div class="input-field center">
+            <button class="btn" name="btnSubmit" formaction="#contact" data-target="msg">Submit</button>
+          </div>
+          
+        </form>
+      </div>        
+    </div>
+  </section>
+  <!-- footer -->
+  <footer class="page-footer grey darken-3">
+   <div class="container">
+     <div class="row">
+       <div class="col s12 l6">
+         <h5>More About Me</h5>
+         <p>I lived in Cebu City, Philippines. I'm 22 years of age and a graduating student.  </p>
+          <p>I started studying Information Technology at the University of Cebu at 2016. </p>
+       </div>
+       <div class="col s12 l4 offset-l2">
+         <h5>Connect</h5>
+         <ul>
+            <li><a href="https://www.facebook.com/steven7200" target="_blank" class="grey-text text-lighten-3">Facebook</a></li>
+            <li><a href="https://www.instagram.com/estayvain" target="_blank" class="grey-text text-lighten-3">Instagram</a></li>
+            <li><a href="https://github.com/stevenm98" target="_blank" class="grey-text text-lighten-3">GitHub</a></li>
+            
+         </ul>
+       </div>
+     </div>
+   </div>
+   <div class="footer-copyright grey darken-4">
+      <div class="container center-align">&copy;2020 Copyright</div>
+   </div>  
+  </footer>
+
+
+
+
+
+
+
+<!-- Jquery -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>   
+  <script>
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+        $('.materialboxed').materialbox();
+        $('.parallax').parallax();
+        $('.tabs').tabs();
+        $('.datepicker').datepicker({
+            disableWeekends: true
+        });
+        $('.tooltipped').tooltip();
+        $('.scrollspy').scrollSpy();
+        $('.modal').modal();
+    });
+  </script>
+</body>
+</html>
