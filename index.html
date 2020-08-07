@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- font awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" 
+  integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Compiled and minified CSS -->
@@ -19,6 +20,7 @@
         background-size: cover;
         background-position: right;
         min-height: 950px;
+        position: relative;
     }
     .section{
         padding-top: 4vw;
@@ -34,7 +36,7 @@
         header{ 
             min-height: 500px;
         }
-
+   
     }
     @media (max-width: 670px){
         code1.jpg{
@@ -44,11 +46,20 @@
             background-attachment: parallax ;
         }
     }
+    .text-top-right {
+      position: absolute;
+      top: 80px;
+      right: 35px;
+
+    }
   </style>
 </head>
 <body>
   <!-- navbar -->
   <header>
+    <div class="text-top-right indigo-text">
+      <h5>Welcome to my Portfolio Website</h5>
+    </div>
      <nav class="nav-wrapper transparent">
         <div class="container">
            <a href="" class="brand-logo"><img src="Images/newlogo1.png" 
@@ -57,9 +68,9 @@
               <i class="material-icons">menu</i>
            </a>   
            <ul class="right hide-on-med-and-down">
-              <li><a href="#photos" class="indigo-text text-lighten-3">Photos</a></li>
-              <li><a href="#about" class="indigo-text text-lighten-3">About me</a></li>
-              <li><a href="#contact" class="indigo-text text-lighten-3">Contact</a></li> 
+              <li><a href="#photos" class="indigo-text text-lighten-2">Photos</a></li>
+              <li><a href="#about" class="indigo-text text-lighten-2">About me</a></li>
+              <li><a href="#contact" class="indigo-text text-lighten-2">Contact</a></li> 
               <li><a href="https://www.facebook.com/steven7200" target="_blank" 
                      class="tooltipped btn-floating btn-small indigo darken-3" data-tooltip="Facebook">
                      <i class="fab fa-facebook"></i>
