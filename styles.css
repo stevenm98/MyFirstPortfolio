@@ -1,0 +1,50 @@
+header{
+  background: url(Images/program4.jpg);
+  background-size: cover;
+  background-position: right;
+  min-height: 950px;
+  position: relative;
+}
+.section{
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+}
+.tabs .indicator{
+background-color: #1a237e;
+}
+.tabs .tab a:focus, .tabs .tab a:focus.active{
+background: transparent;
+}
+@media screen and (max-width: 670px){
+  header{ 
+      min-height: 500px;
+  }
+}
+@media screen and (max-width: 690px){
+  code1.jpg{
+      background-attachment: parallax ;
+  }
+  code2.jpg{
+      background-attachment: parallax ;
+  }
+}
+.welcome-message {
+position: absolute;
+top: 120px;
+right: 150px;
+}
+@media screen and (max-width: 670px){
+  .welcome-message {
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    }
+    #front .row{
+      display: inline;
+    }
+}
+@media screen and (max-width: 1300px){
+    #front .row{
+      display: inline;
+    }
+}
